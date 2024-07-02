@@ -1,0 +1,52 @@
+.devmind-home {
+    position: relative;
+    background-image: url("../../../images/backimg.jpg");
+    background-size: cover;
+    height: 80vh;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.devmind-royalsign {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 0 3% 3%;
+    color: var(--whitecolor);
+}
+
+.devmind-sign {
+    font-size: 36px;
+}
+.devminds-royallogoimge{
+    height: 72px;
+}
+.devmind-royal{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-size: 65px;
+    font-weight: 500;
+}
+
+.devmind-royaltext {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0 20px 20px 0px;
+    color: var(--whitecolor);
+}
+.denminds-h3righttext{
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: var(--fontstyleall);
+}
+
+@media (max-width:620px) {
+    .devmind-royaltext {
+        visibility: hidden;
+    }
+    .devmind-royalsign{
+        display: block;
+    }
+    .devminds-royallogoimge {
+        height: 52px;
+    }
+}

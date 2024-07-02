@@ -1,0 +1,27 @@
+.devminds-audbtn{
+    text-align: var(--textalignall);
+}
+.devminds-audience{
+    background: var(--buttonBgcolor) !important;
+    color: var(--whitecolor);
+    border-radius: 10px!important;
+    text-transform: capitalize!important;
+    font-size: var(--buttontextfontsize)!important;
+    height: var(--buttonheight);
+    width: var(--buttonwidth);
+}
+.devminds-audience:hover{
+background-color: aliceblue !important;
+color: black;
+}
+.devminds-textfind{
+    font-size: larger;
+}
+
+@media (max-width: 768px) {
+    .devminds-audience{
+    font-size: 10px!important;
+    height: 35px;
+    width: 150px;
+   }
+    }

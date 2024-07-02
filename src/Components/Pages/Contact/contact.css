@@ -1,0 +1,126 @@
+.devminds-contactbg {
+  background-image: linear-gradient(rgb(0 0 0 / 0%), rgb(247 247 247 / 19%));
+  background-image: url("../../../images/bgimg.jpg");
+  background-size: cover;
+  margin-bottom: -5px;
+  margin-top: -77px;
+  background-size: cover;
+  
+}
+.inputContact,
+.inputContact:focus {
+  background-color:  #58a6e785 !important;
+  border: 1px solid #9da6af;
+  color: white;
+  border: 1px solid white;
+}
+.inputContact .ant-input-number-input {
+  color: white;
+  padding: 0;
+}
+::placeholder {
+  color: white!important;
+  opacity: 1;
+}
+.buttonsubmistyle {
+  margin-top: 10px;
+}
+.contactmaintitle {
+  padding-top: 30px;
+  height: 30px;
+  margin-top: 66px;
+  font-family: var(--fontfamilyall) !important;
+  font-size: var(--fontsizeall);
+  margin-bottom: 47px;
+}
+.inputtitle {
+  font-family: emoji;
+  font-size: 18px !important;
+  color: black !important;
+}
+.inputContact :-ms-input-placeholder {
+  color: red;
+}
+.inputContact ::-ms-input-placeholder {
+  color: red;
+}
+.contacttitle {
+  font-family: Krylon, Sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  font-style: oblique;
+  color: black;
+  text-shadow: 1px 2px #120c0c;
+}
+.textincontactp {
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+  text-shadow: 3px 4px 11px #120c0c;
+}
+.maintitle {
+  font-weight: 800;
+  color: black;
+  text-shadow: 1px 2px #120c0c;
+}
+.devminds-buttoncolorclass {
+  width: 0px;
+}
+.devminds-ifamemap {
+  padding-top: 15px;
+}
+
+.contactsubmitb .devminds-audience {
+  height: 49px !important;
+  width: 161px !important;
+}
+
+
+@media (max-width:768px) {
+
+.devminds-textfind {
+  font-size: 13px !important;
+}
+.contactsubmitb{
+height: 37px !important;
+width: 150px !important;
+align-items: center !important;
+
+}
+
+.contactmaintitle {
+text-align: center;
+margin-left: -27px;
+font-size: 43px;
+}
+}
+
+
+.devminds-contact{
+box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.6);
+border-radius: 30px;
+opacity: 1;
+padding: 20px;
+background: #58a6e785;;
+}
+
+.devminds-Regform{
+margin-top: 50px!important;
+}
+
+.devminds-submit{
+background-color: white;
+}
+.devminds-social{
+text-align: center;
+margin-top: 20px;
+color: rgba(255, 255, 255, 0.738);
+}
+
+.devminds-handles{
+height: 30px;
+width: 30px;
+border-radius: 50%;
+border: none;
+outline: none;
+}

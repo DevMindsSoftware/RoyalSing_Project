@@ -1,0 +1,111 @@
+/* #progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    cursor: pointer;
+    background: conic-gradient(#ec6415 var(--scroll-progress, 0%), #FFFFFF var(--scroll-progress, 0%));
+    border: 2px solid #ec6415;
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #ec6415;
+}
+
+@media screen and (min-width:1024px) {
+    #progress {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (min-width:720px) and (max-width:1024px) {
+    #progress {
+        height: 50px;
+        width: 50px;
+    }
+
+    #progress-value {
+        font-size: 30px;
+        height: calc(100% - 8px);
+        width: calc(100% - 8px);
+    }
+}
+
+@media (min-width:320px) and (max-width:720px) {
+    #progress {
+        height: 50px;
+        width: 50px;
+    }
+
+    #progress-value {
+        font-size: 25px;
+        height: calc(100% - 5px);
+        width: calc(100% - 5px);
+    }
+} */
+
+
+#progress {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(90deg, #ec6415 var(--scroll-progress), #d3d3d3 var(--scroll-progress));
+    border-radius: 50%;
+    display: none;
+    place-items: center;
+    z-index: 999;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+#progress:hover {
+    background: #ec6415;
+}
+
+#progress-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.send-icon {
+    font-size: 24px;
+    color: black;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.arrow-icon {
+    position: absolute;
+    font-size: 24px;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#progress:hover .send-icon {
+    opacity: 0;
+}
+
+#progress:hover .arrow-icon {
+    opacity: 1;
+}

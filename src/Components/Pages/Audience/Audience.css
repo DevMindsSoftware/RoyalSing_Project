@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.devminds-goalhead{
+    text-align: var(--textalignall);
+    font-size: var(--fontsizetitle);
+}
+.devminds-goalhead-2{
+    text-align: var(--textalignall) !important;
+    font-size: var(--fontsizeall) !important;
+    font-family: var(--fontfamilyall) !important;
+    font-weight: var(--fontweightall) !important;
+    font-style: var(--fontstyleall) !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+}
+
+.devminds-focus{
+    text-align: var(--textalignall);
+    font-size: 22px;
+}
+
+.devminds-audbtn{
+    text-align: var(--textalignall);
+}
+.devminds-textfind{
+    font-size: larger;
+}
+.devminds-audience{
+    background: var(--buttonBgcolor) !important;
+    color: var(--whitecolor);
+    border-radius: 10px!important;
+    text-transform: capitalize!important;
+    font-size: var(--buttontextfontsize)!important;
+    height: var(--buttonheight);
+    width: var(--buttonwidth);
+}
+
+@media (max-width:768px) {
+    .devminds-goalhead-2{
+        line-height: 64px;
+    }
+  }

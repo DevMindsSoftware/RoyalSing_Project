@@ -1,0 +1,76 @@
+  .background {
+    /* background-image: url("../../../images/Roadimg.jpg"); */
+    background-image: url("https://img.freepik.com/premium-psd/large-roadside-sign-board-advertisement-roadside-billboard-sign-mockup-outdoor-signage-template_919056-5140.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--whitecolor);
+    height: 600px; /* Set specific height */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #331919;
+    background-blend-mode: difference;  
+  }
+  
+  .devminds-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: var(--fontfamilyall) !important;
+    color: var(--whitecolor) !important;
+  }
+  
+  /* Responsive font properties for the title */
+  @media (max-width: 768px) {
+    .devminds-title {
+      font-family: var(--fontfamilyall) !important;
+      font-weight: 400 !important;
+    }
+   
+  }
+  
+  @media (min-width: 769px) {
+    .devminds-title {
+      font-weight: var(--fontweightall) !important;
+      font-style: var(--fontstyleall) !important;
+      font-size: var(--fontsizeall) !important;
+    }
+    
+  }
+  
+  .feedback-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .feedback-card {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .feedback-text {
+    color: var(--whitecolor);
+    margin-top: 10px;
+    font-size: 19px;
+    font-style: oblique;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .feedback-card {
+      width: 90%;
+      margin: 10px auto; /* Center cards on smaller screens */
+    }
+    .feedback-text {
+        font-size: 15px !important;
+      }
+  }
+  

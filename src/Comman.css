@@ -1,0 +1,112 @@
+:root{
+        --buttonBgcolor:black;
+        --backgroundcolorall: black;
+        --colorall:black;
+        --whitecolor: #ffffff;
+        --buttonheight: 50px;
+        --buttonwidth: 232px;
+        --buttontextfontsize: 15px;
+        --headerbuttonborderradius: 11px;
+        --headerwidth: 100%;
+        --widthall: 100%;
+        --headerbuttonheight: 37px;
+        --headerbuttonwidth: 122px;
+        --headerfontsize: 12px;
+        --fontfamilyall: "Italianno", cursive;
+        --fontweightall: 400;
+        --fontstyleall: normal;
+        --fontsizeall: 78px;
+        --textalignall: center;
+        --justifycontent: center;
+        --alignitemsall: center;
+        --fontsizetitle: 35px;
+        --paregraphfontsize: 17px;
+}
+      
+      /* Default background colors */
+      .black-background {
+        background-color: black;
+        color: white;
+      }
+      
+      .white-background {
+        background-color: white;
+        color: black;
+      }
+      
+      /* .toggle-button {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #fff;
+        color: #000; 
+        border: none;
+        border-radius: 5px;
+        cursor: default;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+      } */
+
+      .toggle-button {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 50px;
+        height: 22px;
+        background-color: #fff;
+        color: #000;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer !important;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+      }
+
+      .devminds-mapbutton {
+        right: 54px;
+        position: fixed;
+        top: 575px;
+        z-index: 1000;
+        /* color: rgb(rgba(255, 255, 255, 0.064), green, blue); */
+    }
+
+    
+      
+      /* Additional styles to ensure other components adapt to theme changes */
+      header, footer {
+        padding: 10px;
+      }
+      
+      /* Additional styles to ensure images are not affected */
+      img {
+        filter: none !important;
+      }
+      .cursor__default{
+        cursor: default !important;
+      }
+      @media (max-width: 1410px) {
+        .toggle-button {
+                /* position: fixed;
+                top: 240px;
+                right: 200px; */
+                display: none;
+              }
+      }
+
+      @media (max-width: 768px) {
+      .devminds-mapbutton {
+        left: 256px;
+        top: 479px;
+    }
+
+    #progress {
+      right: 14px !important;
+  }
+
+  }

@@ -1,0 +1,68 @@
+.devminds-visible{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    height: 70px;
+    background-color:#fff;
+    transform:translateY(0);
+    transition:opacity .5s ease-in-out
+  }
+  .devminds-hidden{
+    transform:translateY(-100%);
+    display: none;
+  }
+.scrolling-header-icon{
+  font-size: 30px;
+}
+.scrolling-header-logo-block{
+  text-align: center;
+}
+  html
+  {
+    scroll-behavior:smooth
+  }
+  .app{
+    transition:transform .3s ease-in-out
+  }
+
+  .navbarscrollingdesign{
+    margin-top: 12px;
+  }
+
+  .navbaritemforscrollingheader{
+    font-size: 16px;
+    font-weight: 400;
+    /* font-family: cursive; */
+    font-family: "Mulish", sans-serif;
+    border-bottom: none;
+    /* text-transform: uppercase; */
+  }
+
+  .menuforscrollingheader:hover{
+    color: var(--defalutcolor)!important;
+  } 
+  .devminds-imgiconscrolling {
+    height: 40px;
+    width: 60px;
+    margin-top: -3px;
+}
+
+  .iconscrollingheader{
+    font-size: var(--iconfontsize)!important;
+  }
+
+
+  @media (max-width:768px) {
+    .scrollingheaderstyle{
+        display: none;
+      }
+      .devminds-visible{
+        display: none;
+      }
+  }
+  
+
+  .scrollingheaderstyle .scrolling-header-logo-block .scrolling-header-icon{
+    padding: 0px 0px 6px 58px;
+  }

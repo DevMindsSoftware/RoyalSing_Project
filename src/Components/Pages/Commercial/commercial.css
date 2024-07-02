@@ -1,0 +1,69 @@
+.devminds-Requestaquotbutt{
+    background: var(--buttonBgcolor) !important;
+    height: var(--buttonheight);
+    width: var(--buttonwidth);
+    font-size: var(--buttontextfontsize)!important;
+    height: var(--buttonheight);
+    width: var(--buttonwidth);
+}
+.devminds-commercialtitle{
+    font-family:var(--fontfamilyall);
+    font-family: var(--fontfamilyall);
+    font-weight: var(--fontweightall);
+    font-style: var(--fontstyleall);
+    font-size: var(--fontsizeall);
+    line-height: 45px;
+}
+.devminds-wemakecommericial{
+    font-size: var(--fontsizetitle);
+}
+.devminds-commercialparegraph{
+    font-size: var(--paregraphfontsize);
+}
+
+.devminds-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    height: 94px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  .devminds-titlebutton{
+    font-size: 21px;
+    font-weight: 500;
+    font-family: "Verdana";
+  
+  }
+  .requestbutton {
+    justify-content: flex-start !important; 
+    width: 100%; 
+    display: flex; 
+  }
+  
+  .devminds-button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .icon-end {
+    margin-left: 10px; /* Adjust this spacing as necessary */
+  }
+
+
+  
+  @media (max-width:768px) {
+    .devminds-button{
+      height: 60px;
+    }
+    .devminds-titlebutton {
+      font-size: 16px;
+      font-weight: 500;
+  }
+  }

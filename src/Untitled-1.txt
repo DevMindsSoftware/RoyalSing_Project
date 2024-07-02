@@ -1,0 +1,29 @@
+import React from "react";
+import "./Comman.css";
+import ScrollingHeader from "./Components/Pages/ScrollingHeader/index";
+import Footer from "./Components/Footer/index";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Contact from "./Components/Pages/Contact";
+import Gallery from "./Components/Pages/Gallery";
+import Home from "./Components/Home";
+import About from "./Components/Pages/About";
+
+function App() {
+  return (
+    <div>
+      <ScrollingHeader />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+
+      <Footer />
+    </div>
+  );
+}
+
+export default App;

@@ -1,0 +1,44 @@
+.devminds-signimg{
+    width: var(--widthall);
+    /* height: 418px; */
+    height: 580px;
+    /* height: 540px; */
+    border-radius: 30px;
+    box-shadow: 3px 2px 6px 1px rgb(165, 163, 163) !important;
+}
+.devminds-signimg:hover{
+    transition: box-shadow 0.3s ease !important;
+     box-shadow: 3px 2px 6px 1px rgb(165, 163, 163) !important;
+     /* transform: translateY(-7px); */
+     /* transform: scale(0.1); */
+}
+
+.devminds-signs-card .ant-card-body{
+    padding: 0px;
+   
+}
+.devminds-maindivsign{
+    margin-bottom: 99px;
+}
+.devminds-signs-card{
+    width: var(--widthall);
+    height:300px;
+    border-radius: 30px;
+    margin-bottom: 235px;
+}
+
+
+@media (max-width: 768px) {
+.devminds-signs-card {
+    margin-bottom: 300px;
+}
+.devminds-shopprovidestitle{
+    line-height: 60px !important;
+}
+}
+
+@media (max-width: 768px) {
+    .devminds-maindivsign{
+        margin-bottom: 30px;
+    }
+}
