@@ -28,7 +28,7 @@ const Gallery = () => {
           <ImageList
             sx={{overflow: 'hidden' }}
             variant="masonry"
-            cols={isMobile ? 2 : 3}
+            cols={isMobile ? 1 : 3}
             gap={isMobile ? 8 : 16}
           >
             {Gallerydata.map((item, index) => (

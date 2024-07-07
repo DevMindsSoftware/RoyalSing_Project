@@ -15,7 +15,8 @@ const About = () => {
       <div className="about-container">
         <Row gutter={[16,12]}>
           <Col span={24} className="about-header">
-            <h2 className="about-title"> <Functiontext textArray={["ABOUT US"]} /></h2>
+            {/* <h2 className="about-title"> <Functiontext textArray={["ABOUT US"]} /></h2> */}
+            <h2 className="about-title"> ABOUT US</h2>
           </Col>
           <Col xs={24} sm={24} md={24} lg={12} xl={12} xxl={12} className="about-image-col">
             <img src={Aboutimage1} alt="about" className="about-image" />

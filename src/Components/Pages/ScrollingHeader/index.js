@@ -83,7 +83,9 @@ const ScrollingHeader = () => {
                 icon={faCrown}
                 className="scrolling-header-icon"
               /> */}
-              <img src={crownicon} className="devminds-imgiconscrolling" />
+              <Link to="/">
+                <img src={crownicon} className="devminds-imgiconscrolling" />
+              </Link>
               {/* <img src={logo}  className='scrolling-header-image'/> */}
             </div>
           </div>
@@ -143,7 +145,7 @@ const ScrollingHeader = () => {
               onClick={contactfunclick}
             >
               {" "}
-              <PhoneOutlined className="iconscrollingheader" /> Contact
+              <PhoneOutlined className="iconscrollingheader phoneiconsize" /> Contact
             </Menu.Item>
 
             <Menu.Item

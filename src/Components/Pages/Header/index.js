@@ -3,7 +3,7 @@ import { Menu, Button, Layout, Dropdown, Col, Row, Drawer } from "antd";
 import { MenuOutlined, DownOutlined } from "@ant-design/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faCrown } from "@fortawesome/free-solid-svg-icons";
-import crownicon from "../../../images/crown.png"
+import crownicon from "../../../images/crown.png";
 import { motion } from "framer-motion";
 import "./header.css";
 import { Link } from "react-router-dom";
@@ -42,13 +42,22 @@ const Header = () => {
     navigate("/contact");
     scrollToTop();
   };
+  const drowermenu = () => {
+    navigate("/gallery");
+    scrollToTop();
+  };
 
   const menu = (
     <Menu>
-      <Menu.Item key="1">LED Signage</Menu.Item>
-      <Menu.Item key="2">LED Signage</Menu.Item>
-      <Menu.Item key="3">Acrylic Signage</Menu.Item>
-      <Menu.Item key="4">Metal Signage</Menu.Item>
+      <Menu.Item key="1" onClick={drowermenu}>
+       LED Signage
+      </Menu.Item>
+      <Menu.Item key="2" onClick={drowermenu}>
+        Design
+      </Menu.Item>
+      <Menu.Item key="3" onClick={drowermenu}>
+        Printing
+      </Menu.Item>
     </Menu>
   );
 
@@ -110,12 +119,12 @@ const Header = () => {
             xl={7}
             className="navbar-brand-col"
           >
-            <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-              <Link className="devminds-navbar-brand" href="/">
-                {/* <FontAwesomeIcon icon={faCrown} /> */}
-                <img src={crownicon} className="devminds-imgicon" />
-              </Link>
-            </motion.div>
+            {/* <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}> */}
+            <Link className="devminds-navbar-brand" to="/">
+              {/* <FontAwesomeIcon icon={faCrown} /> */}
+              <img src={crownicon} className="devminds-imgicon" />
+            </Link>
+            {/* </motion.div> */}
           </Col>
           <Col
             xs={24}
@@ -133,7 +142,7 @@ const Header = () => {
                 >
                   <Link to="/contact">
                     <Button className="devmind-signing">
-                    Signage <DownOutlined />
+                      Signage <DownOutlined />
                     </Button>
                   </Link>
                 </motion.div>
@@ -158,24 +167,25 @@ const Header = () => {
             >
               <Menu mode="vertical">
                 <Menu.Item key="home" onClick={onClose}>
-                  <span  className="devminds-menustitle" onClick={homefunclick}>
+                  <span className="devminds-menustitle" onClick={homefunclick}>
                     Home
                   </span>
                 </Menu.Item>
                 <Menu.Item key="about" onClick={onClose}>
-                  <span  className="devminds-menustitle" onClick={aboutfunclick}>
+                  <span className="devminds-menustitle" onClick={aboutfunclick}>
                     About Us
                   </span>
                 </Menu.Item>
                 <Menu.Item key="resources" onClick={onClose}>
-                  <span className="devminds-menustitle" onClick={galleryfunclick}>
+                  <span
+                    className="devminds-menustitle"
+                    onClick={galleryfunclick}
+                  >
                     Gallery
                   </span>
                 </Menu.Item>
                 <Menu.Item key="resources" onClick={contactfunclick}>
-                  <span className="devminds-menustitle">
-                    Contact
-                  </span>
+                  <span className="devminds-menustitle">Contact</span>
                 </Menu.Item>
               </Menu>
             </Drawer>

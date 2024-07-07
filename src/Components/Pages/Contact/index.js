@@ -37,19 +37,20 @@ const Contact = () => {
   };
 
   const MessagesendEmail = () => {
+    console.log("click");
     setLoading(true);
     if (
       formValues.message &&
-      formValues.from_name &&
-      formValues.Last_name &&
+      formValues.first_name &&
+      formValues.last_name &&
       formValues.mobileNoo
     ) {
       // const serviceID = "service_94bhhvd";
       // const templateID = "template_8fqtqo1";
       // const APIkeys = "Cv0H2fUdplt4cjHo1";
-      const serviceID = "";
-      const templateID = "";
-      const APIkeys = "";
+      const serviceID = "service_2etuzmm";
+      const templateID = "template_d1bbman";
+      const APIkeys = "G0MrTSdUxZcsu1YAw";
       const formElement = document.getElementById("form");
 
       emailjs
@@ -108,7 +109,7 @@ const Contact = () => {
                   <Row gutter={16} className="devminds-Regform">
                     <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                       <Form.Item
-                        name="from_name"
+                        name="first_name"
                         rules={[
                           {
                             required: true,
@@ -119,14 +120,14 @@ const Contact = () => {
                         <Input
                           placeholder="First name"
                           className="form-control inputContact"
-                          name="from_name"
+                          name="first_name"
                           onChange={handleInputChange}
                         />
                       </Form.Item>
                     </Col>
                     <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                       <Form.Item
-                        name="Last_name"
+                        name="last_name"
                         rules={[
                           {
                             required: true,
@@ -137,7 +138,7 @@ const Contact = () => {
                         <Input
                           placeholder="Last name"
                           className="form-control inputContact"
-                          name="Last_name"
+                          name="last_name"
                           onChange={handleInputChange}
                         />
                       </Form.Item>
@@ -196,6 +197,7 @@ const Contact = () => {
                       endIcon={<SendIcon />}
                       htmlType="submit"
                       className="contactsubmitb"
+                      loading={loading}
                     />
                   </div>
                   <p className="devminds-social">Royal sing</p>
@@ -216,7 +218,11 @@ const Contact = () => {
                       <WhatsAppOutlined />
                     </Button>
                     &nbsp;
-                    <Button className="devminds-handles" href="https://www.facebook.com/" target="_blank">
+                    <Button
+                      className="devminds-handles"
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                    >
                       <FacebookOutlined />
                     </Button>
                   </div>
@@ -228,7 +234,7 @@ const Contact = () => {
               <Col span={24}>
                 <div className="devminds-ifamemap">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15286.6884389085!2d74.2227299!3d16.6932836!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1017a50837dd9%3A0x8a43d5d5d78bfe1c!2sJagdamb%20E%20Seva%20Kendra!5e0!3m2!1sen!2sin!4v1703485521699!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.5491396739526!2d74.23203307491843!3d16.69943018407519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc10135800b55d7%3A0xfad224f6f09a76ad!2sRoyal%20sign!5e0!3m2!1sen!2sin!4v1720357973756!5m2!1sen!2sin"
                     height="450"
                     style={{ border: "0", width: "100%" }}
                     allowFullScreen=""

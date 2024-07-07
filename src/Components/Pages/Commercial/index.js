@@ -11,7 +11,7 @@ const Commercial = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
   }, []);
-  
+
   // Function to determine the AOS animation based on screen width
   const getAosAnimation = () => {
     if (window.innerWidth <= 992) {
@@ -27,15 +27,8 @@ const Commercial = () => {
   return (
     <div className="container">
       <Row gutter={12}>
-        <Col
-          xs={24}
-          sm={24}
-          md={24}
-          lg={16}
-          xl={16}
-          data-aos={leftColumnAos}
-        >
-          <Card>
+        <Col xs={24} sm={24} md={24} lg={16} xl={16} data-aos={leftColumnAos}>
+          {/* <Card> */}
             <h2 className="devminds-wemakecommericial">We make all type of</h2>
             <br />
             <h2 className="devminds-commercialtitle">commercial signs</h2>
@@ -50,21 +43,16 @@ const Commercial = () => {
               speak with one of our team members today.
             </p>
             <br />
-            <Commentbutton
-              text="Request a quot"
-              endIcon={<SendIcon />} 
-              className="requestbutton"
-            />
-          </Card>
+            <a href="https://wa.me/7057250002" target="_blank">
+              <Commentbutton
+                text="Request a quot"
+                endIcon={<SendIcon />}
+                className="requestbutton"
+              />
+            </a>
+          {/* </Card> */}
         </Col>
-        <Col
-          xs={24}
-          sm={24}
-          md={24}
-          lg={8}
-          xl={8}
-          data-aos={rightColumnAos}
-        >
+        <Col xs={24} sm={24} md={24} lg={8} xl={8} data-aos={rightColumnAos}>
           <div className="devminds-button">
             <span className="devminds-titlebutton">LED Signage</span>
             <SendIcon className="icon-end" />

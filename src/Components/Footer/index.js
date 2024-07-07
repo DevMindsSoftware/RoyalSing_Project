@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 import instaicon from "../../images/instaicon.png";
 import facicon from "../../images/facbookicon.png";
 import whatsapp from "../../images/whaticon.png";
+import youtube from "../../images/youtubeicon.png";
+// import { YoutubeOutlined } from "@ant-design/icons";
 import "./footer.css";
 import AOS from "aos";
 import { Link } from "react-router-dom";
@@ -135,6 +137,21 @@ const Footer = () => {
                     className="devminds-iconnsset"
                   />
                 </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <img
+                    src={youtube}
+                    alt="youtube"
+                    className="devminds-iconnsset-youtube"
+                  />
+                </a>
+
+                {/* <a
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <YoutubeOutlined className="devminds-iconnsset-youtube" />
+                </a> */}
               </div>
             </div>
           </Col>

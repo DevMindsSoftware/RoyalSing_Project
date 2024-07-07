@@ -26,8 +26,8 @@ const Shopprovides = () => {
   const rightColumnAos = window.innerWidth <= 992 ? "fade-up" : "fade-left";
 
   return (
-    <div className="container">
-      <Card>
+    <div className="container mb-4 mt-4" >
+      {/* <Card> */}
         <Row>
           <Col xs={24} sm={24} md={24} lg={16} xl={16} data-aos={leftColumnAos}>
             <h2 className="devminds-shopprovides">The sign shop provides </h2>
@@ -44,11 +44,13 @@ const Shopprovides = () => {
               Contact us for more information.
             </p>
             <br />
+            <a href="tel:+917057250002">
             <Commentbutton
-              text="Call No"
+              text="Call Now"
               endIcon={<SendIcon />}
               className="devminds-CallNobutton"
             />
+            </a>
           </Col>
           <Col xs={24} sm={24} md={24} lg={8} xl={8} data-aos={rightColumnAos} className="text-center">
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
@@ -59,7 +61,7 @@ const Shopprovides = () => {
             </motion.div>
           </Col>
         </Row>
-      </Card>
+      {/* </Card> */}
     </div>
   );
 };

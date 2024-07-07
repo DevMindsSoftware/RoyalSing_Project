@@ -73,10 +73,17 @@
   text-align: center;
 }
 .devminds-iconnsset {
-  width: 35px;
+  margin-top: 9px;
+  width: 25px;
   margin-right: 7px;
 }
-.devminds-iconnsset:hover {
+.devminds-iconnsset-youtube{
+  width: 28px;
+  margin-top: 7px;
+  color: white;
+  height: 30px;
+}
+/* .devminds-iconnsset:hover {
   transform: skew(25deg, 25deg);
   animation: roll 3s infinite;
   transform: rotate(30deg);
@@ -85,7 +92,10 @@
   transform: skew(25deg, 25deg);
   animation: roll 3s infinite;
   transform: rotate(30deg);
-}
+} */
+/* img, svg {
+  vertical-align: none !important;
+} */
 @keyframes roll {
   0% {
     transform: rotate(0);
@@ -95,7 +105,8 @@
   }
 }
 .devminds-iconnsset2 {
-  width: 21px;
+  width: 15px;
+  margin-top: 9px;
   margin-left: -20px;
   margin-right: 7px;
 }
