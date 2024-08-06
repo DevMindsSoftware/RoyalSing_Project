@@ -48,9 +48,9 @@ const Contact = () => {
       // const serviceID = "service_94bhhvd";
       // const templateID = "template_8fqtqo1";
       // const APIkeys = "Cv0H2fUdplt4cjHo1";
-      const serviceID = "service_2etuzmm";
-      const templateID = "template_d1bbman";
-      const APIkeys = "G0MrTSdUxZcsu1YAw";
+      const serviceID = "service_szfpxiu";
+      const templateID = "template_zbxw5fd";
+      const APIkeys = "3Na6LtV-IM7wNbdL8";
       const formElement = document.getElementById("form");
 
       emailjs
